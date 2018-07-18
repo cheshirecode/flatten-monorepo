@@ -1,0 +1,36 @@
+{
+  "name": "flatten-monorepo",
+  "keywords": [
+    "monorepo",
+    "package-management",
+    "yarn-related"
+  ],
+  "version": "0.1.0",
+  "description": "Flatten the dependencies in a Yarn workspace setup, or other sub-folders",
+  "author": "cheshireCode",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "main.js"
+  ],
+  "bin": "index.js",
+  "scripts": {
+    "start": "yarn test:watch",
+    "test": "tape-watch -1 {.,./**}/*.test.js 2>&1 | tap-nirvana",
+    "test:watch": "tape-watch {.,./**}/*.test.js -w -c 2>&1 | tap-nirvana",
+    "test:integration": "cd test; ./setup.sh && ./index.js && ./teardown.sh"
+  },
+  "prepublishOnly": "npm test && npm test:integration",
+  "dependencies": {
+    "commander": "^2.16.0"
+  },
+  "devDependencies": {
+    "tap-nirvana": "^1.0.8",
+    "tape": "^4.9.1",
+    "tape-watch": "^2.3.0"
+  }
+}
