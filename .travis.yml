@@ -1,0 +1,15 @@
+notifications:
+  email:
+    recipients:
+      - dac4158+travis@gmail.com
+    on_success: never
+language: node_js
+install:
+  - npm install
+cache:
+  yarn: true
+  directories:
+    - ".eslintcache"
+    - "node_modules"
+script:
+  - npm run test

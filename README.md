@@ -1,4 +1,6 @@
 # flatten-monorepo
+[![npm version](https://badge.fury.io/js/flatten-monorepo.svg)](https://badge.fury.io/js/flatten-monorepo)
+
 
 - Call from root folder of a project
 ```
