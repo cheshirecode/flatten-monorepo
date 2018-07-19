@@ -1,5 +1,5 @@
 # flatten-monorepo
-[![npm version](https://badge.fury.io/js/flatten-monorepo.svg)](https://badge.fury.io/js/flatten-monorepo)
+[![npm version](https://badge.fury.io/js/flatten-monorepo.svg)](https://badge.fury.io/js/flatten-monorepo) [![Build Status](https://travis-ci.org/cheshirecode/flatten-monorepo.svg?branch=master)](https://travis-ci.org/cheshirecode/flatten-monorepo) [![Coverage Status](https://coveralls.io/repos/github/cheshirecode/flatten-monorepo/badge.svg?branch=master)](https://coveralls.io/github/cheshirecode/flatten-monorepo?branch=master)
 
 
 - Call from root folder of a project

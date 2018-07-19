@@ -9,7 +9,7 @@ const decoder = new StringDecoder('utf8');
 
 const currentDir = path.resolve(__dirname);
 /*eslint no-console: 0 */
-const done = function(err, data) {
+const done = (err, data) => {
   if (err) {
     throw err;
   }
@@ -18,11 +18,11 @@ const done = function(err, data) {
   }
 };
 
-fs.readdir(currentDir, function(err, list) {
+fs.readdir(currentDir, (err, list) => {
   if (err) return done(err);
   list.forEach(file => {
     const filePath = path.resolve(currentDir, file);
-    fs.stat(filePath, function(err, stat) {
+    fs.stat(filePath, (err, stat) => {
       const files = [
         `${filePath}/package.actual.json`,
         `${filePath}/package.expected.json`

@@ -5,11 +5,11 @@ notifications:
     on_success: never
 language: node_js
 install:
-  - npm install
+  - yarn
 cache:
   yarn: true
   directories:
-    - ".eslintcache"
     - "node_modules"
 script:
-  - npm run test
+  - yarn test
+after_success: 'yarn coveralls'
