@@ -5,7 +5,7 @@
     "package-management",
     "yarn-related"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Flatten the dependencies in a Yarn workspace setup, or other sub-folders",
   "author": "cheshireCode",
   "license": "MIT",
