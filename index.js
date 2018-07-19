@@ -23,7 +23,7 @@ program
   .option('-r, --root <root>', 'Root folder. Default to .')
   .option(
     '-l, --location <location>',
-    'Packages location relative to root. Default to "packages" folder'
+    'Packages location relative to root. Default to .'
   )
   .option(
     '-b, --blacklist <blacklist>',
