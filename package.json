@@ -8,12 +8,18 @@
   "version": "0.1.2",
   "description": "Flatten the dependencies in a Yarn workspace setup, or other sub-folders",
   "author": "cheshireCode",
+  "repository": "github:cheshirecode/flatten-monorepo",
+  "bugs": {
+    "url": "https://github.com/cheshirecode/flatten-monorepo/issues",
+    "email": "dac4158+github@gmail.com"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=8"
   },
   "files": [
-    "lib",
+    "lib/*.js",
+    "!lib/*.test.js",
     "index.js",
     "main.js"
   ],
