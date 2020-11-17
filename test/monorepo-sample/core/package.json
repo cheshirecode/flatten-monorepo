@@ -2,8 +2,8 @@
   "name": "@flatten-monorepo/core",
   "private": true,
   "dependencies": {
-    "webpack": "^4.8.1",
-    "webpack-cli": "^3.0.8"
+    "webpack": "^5.1.1",
+    "webpack-cli": "^4.0.0"
   },
   "devDependencies": {
     "@rntw/eslint-config-lint": "0.1.0",
